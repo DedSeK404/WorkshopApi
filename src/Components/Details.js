@@ -10,8 +10,7 @@ export const Details = () => {
     const getOneRecipe = async () => {
       try {
         const res = await axios.get(
-          `https://api.edamam.com/api/recipes/v2/${idrecipe}?type=public&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}
-                  `
+          `https://api.edamam.com/api/recipes/v2/${idrecipe}?type=public&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}`
         );
        //  console.log(res.data.hits)
         setData(res.data.recipe);

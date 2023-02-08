@@ -18,7 +18,9 @@ function App() {
     const getAllRecipes = async () => {
       try {
         const res = await axios.get(
-          `https://api.edamam.com/api/recipes/v2?type=public&q=${searchRecipe}&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}`
+          `https://api.edamam.com/api/recipes/v2?type=public&q=milk&app_id=bc822561&app_key=37913a344c6d8dfde802b6435efbad31
+          `
+          // `https://api.edamam.com/api/recipes/v2?type=public&q=${searchRecipe}&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}`
         );
         // console.log(res.data.hits)
         setList(res.data.hits);
